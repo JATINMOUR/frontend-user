@@ -9,10 +9,10 @@ function App() {
       {/* USER DASHBOARD */}
       <Route path="/" element={<UserFeedback />} />
 
+
       {/* ADMIN DASHBOARD */}
       <Route path="/admin" element={<Dashboard />} />
     </Routes>
+
   );
 }
-
-export default App;
