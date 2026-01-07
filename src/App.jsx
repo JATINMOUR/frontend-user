@@ -1,17 +1,18 @@
-import { Routes, Route } from "react-router-dom";
-// import ReviewForm from "./components/ReviewForm";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./components/Dashboard";
 import UserFeedback from "./components/UserFeedback";
 
 function App() {
   return (
-    <Routes>
-      {/* USER DASHBOARD */}
-      <Route path="/" element={<UserFeedback />} />
+    <BrowserRouter>
+      <Routes>
+        {/* USER DASHBOARD */}
+        <Route path="/" element={<UserFeedback />} />
 
-      {/* ADMIN DASHBOARD */}
-      <Route path="/admin" element={<Dashboard />} />
-    </Routes>
+        {/* ADMIN DASHBOARD */}
+        <Route path="/admin" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
